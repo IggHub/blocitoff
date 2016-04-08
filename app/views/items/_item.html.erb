@@ -1,0 +1,8 @@
+<!-- list items here -->
+
+<div id=<%="item-#{item.id}"%> class="item list-group-item">
+  <%= item.name %>
+  <button type="button" class="btn btn-default btn-lg display-inline-right">
+    <%= link_to 'Done!', user_item_path(@user.id, item.id), method: :delete %>
+  </button>
+</div>

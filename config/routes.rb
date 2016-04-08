@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
+  get 'users/show'
+
+  get 'items/new'
+
+  get 'items/create'
+
   devise_for :users
   get 'welcome/index'
 
   get 'welcome/about'
 
-#  root 'welcome#index'
+
   root to: "welcome#index"
+  resources :users, only: [:show] do #this means that within users, it can only show user profile. Within user profile a list of items will be displayed (for peer pressure)
+    resources :items, only: [:create, :destroy]
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
