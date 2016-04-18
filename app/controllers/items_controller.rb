@@ -49,4 +49,10 @@ class ItemsController < ApplicationController
     params.require(:item).permit(:name)
   end
 
+
+  respond_to do |format|
+   format.html
+   format.js
+  end
+
 end
