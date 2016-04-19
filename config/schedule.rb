@@ -20,6 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 env :MAILTO, 'igoririanto@rocketmail.com'
 
-every 1.minute do
+every 10.minutes do
   rake "todo:delete_items"
 end
