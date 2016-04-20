@@ -1,10 +1,8 @@
-<h4 class="media-heading">hello <%= @user.email %></h4>
-You have  <%= pluralize(@user.items.count, 'item') %> listed
+<h4 class="media-heading">Hello <%= @user.username %></h4>
+You have <%= pluralize(@user.items.count, 'item') %> left to do to make your dreams come true
 
 <h3>Items:</h3>
-
 <%= render @items%>
 
-
-<h3>Make new item:</h3><br>
+<h3>What to do next?</h3><br>
 <%= render partial: 'items/form', locals: {user: @user} %>

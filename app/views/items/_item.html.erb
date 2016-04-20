@@ -3,6 +3,6 @@
 <div class = "list-group">
     <%= link_to "", user_item_path(@user.id, item.id), method: :delete, class: 'glyphicon glyphicon-ok' %>
     <%= item.name %> -
-  submitted <%= time_ago_in_words(item.created_at) %> ago,
-  Time left <%= distance_of_time_in_words(Time.now, item.created_at + 5.minutes, include_seconds: true)%>
+  <small>submitted <%= time_ago_in_words(item.created_at) %> ago |
+  Time left: <%= distance_of_time_in_words(Time.now, item.created_at + 5.minutes, include_seconds: true)%></small>
 </div>
