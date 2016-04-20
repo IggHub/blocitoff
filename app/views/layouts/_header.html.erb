@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="nav navbar-nav navbar-right">
       <li><%= link_to "Home", welcome_index_path %></li>
-      <li><%= link_to "About", "/welcome/about" %></li>
+      
       <% if user_signed_in? %>
       <li><%= link_to "Edit Account", edit_user_registration_path, :class => 'navbar-link' %></li>
       <li><%= link_to "Your To-Do List", user_path(current_user) %></li>
