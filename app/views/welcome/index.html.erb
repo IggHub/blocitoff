@@ -1,12 +1,19 @@
 <div class = "center jumbotron">
-  <h1>Welcome to Blocitoff</h1>
-  <h2>
-    By creating to-do items, you can increase your productivity by <strong>31.4%</strong>!
-  </h2>
-  <h3>
-    (not scientifically proven)
-  </h3>
 
-  <%= link_to "Yes, I want to do it!!!", user_path(current_user), class: 'btn btn-primary' %>
+        <div class="text-vertical-center">
+            <h1>Blocitoff!</h1>
+            <h3>Don't just block notes.<em> Blocitoff!</em></h3>
+            <br>
+            <%= link_to "Sign up", new_registration_path(current_user) %>
+            <div class="row">
+                <h5>Got an account? <u><%= link_to "Log in", new_session_path(current_user) %><br /></u><br></h5>
+            </div>
+        </div>
+
+
+
+
+
+<!--    <%= link_to "Yes, I want to do it!!!", user_path(current_user), class: 'btn btn-primary' %>-->
 
 </div>

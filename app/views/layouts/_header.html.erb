@@ -4,14 +4,16 @@
       <li><%= link_to "Home", welcome_index_path %></li>
 
       <% if user_signed_in? %>
-        <li><%= link_to "Edit Account", edit_user_registration_path, :class => 'navbar-link' %></li>
-        <li><%= link_to "Your To-Do List", user_path(current_user) %></li>
-        <li><%= link_to "I'm done", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+      <!--  <li><%= link_to "Edit Account", edit_user_registration_path, :class => 'navbar-link' %></li>-->
+        <li><%= link_to "Bloc list", user_path(current_user) %></li>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
         <li><%= image_tag current_user.avatar_url(48), class: "gravatar" %></li>
 
       <% else %>
+
         <li><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
         <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+        
       <% end %>
     </ul>
   </div>
