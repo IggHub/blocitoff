@@ -1,6 +1,6 @@
 # Blocitoff
 
-_(Reading time: < 3 min)_
+_(Reading time: 1 min)_
 
 
 ### Tired of using complicated todo-app?
