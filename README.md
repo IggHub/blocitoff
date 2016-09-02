@@ -1,7 +1,6 @@
 # Blocitoff
 
-_(Reading time: 1 min)_
-
+Demo: [Blocitoff](https://murmuring-refuge-65573.herokuapp.com)
 
 ### Tired of using complicated todo-app?
 
