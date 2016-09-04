@@ -1,4 +1,4 @@
-require 'spoec_helper'
+require 'spec_helper'
 
 RSpec.describe ItemsController, type: :controller do
 
